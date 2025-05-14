@@ -42,4 +42,4 @@ The main loop:
 
 ```
 
-Follow the console prompts to play
+Follow the console prompts to playg

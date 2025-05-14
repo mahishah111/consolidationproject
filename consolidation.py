@@ -29,7 +29,7 @@ def deal(deck, num):
 
 def display(hand):
      print("\nYour hand:")
-    for i, card in enumerate(hand):
+     for i, card in enumerate(hand):
         print(f"{i}: {card_name(card)}")
 
 #determines which cards are playable and gives player card options
