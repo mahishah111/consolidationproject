@@ -1,8 +1,12 @@
 import random
+import time
 #this will describe all the cards
 suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
 values = list(range(1, 11)) + [11, 12]
 faces = {1: "Ace", 11: "Jack", 12: "Queen"}
+
+#adding a time module
+start_time = time.time()
 
 #displays card in a format easy to read (x, x)
 
@@ -145,5 +149,10 @@ else:
     winner = "P1" if scores["P1"] > scores["P2"] else "P2"
     print(f"\nGame Over. {winner} wins!")
     print(f"Final Scores — You: {scores['P1']}, Computer: {scores['P2']}")
-    
+
+total_time = time.time() - start_time
+minutes = total_time // 60
+seconds = round((total_time % 60),0)
+print(f"This game took {minutes} minutes and {seconds} seconds.")
+
 #commit- coding function after round stuff based on player conditions
